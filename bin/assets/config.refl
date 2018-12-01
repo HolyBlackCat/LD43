@@ -1,0 +1,18 @@
+{
+    cam_mass = 20000,
+    cam_power = 2,
+    cam_drag = 0.0399999991,
+    cam_offset = (0, -16),
+    plr_sprite_size = (36, 36),
+    plr_walk_anim_frame_len = 6,
+    plr_walk_anim_frames = 6,
+    plr_hitbox = [
+		(6,5),
+		(6,11),
+		(-7,5),
+		(-7,11),
+	],
+    plr_walk_acc = 0.4,
+    plr_walk_dec = 0.3,
+    plr_walk_speed = 1.5,
+}

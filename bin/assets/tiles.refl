@@ -1,0 +1,43 @@
+[
+	#  .--- Source index                  .--- Solid
+    #  |    .--- Image index              |
+    #  |    |   .--- First variant index  |
+    #  |    |   |   .--- Variant count    |
+    #  |    |   |   |    .--- Name        |
+    #  |    |   |   |    |                |
+	( -1 , -1 , 0 , 1 , "air"           , 0 ),
+	( 12 , -2 , 0 , 1 , "shadow"        , 0 ),
+	(  0 ,  0 , 0 , 4 , "floor_tiled"   , 0 ),
+	(  1 ,  0 , 4 , 1 , "floor"         , 0 ),
+	(  8 ,  7 , 0 , 5 , "grass"         , 0 ),
+	(  2 ,  1 , 0 , 1 , "wall_top_ul"   , 1 ),
+	(  3 ,  2 , 0 , 1 , "wall_top_um"   , 1 ),
+	(  4 ,  3 , 0 , 1 , "wall_top_ur"   , 1 ),
+	( 14 ,  1 , 1 , 1 , "wall_top_l"    , 1 ),
+	( 15 ,  2 , 1 , 1 , "wall_top_m"    , 1 ),
+	( 16 ,  3 , 1 , 1 , "wall_top_r"    , 1 ),
+	( 26 ,  1 , 2 , 1 , "wall_top_dl"   , 1 ),
+	( 27 ,  2 , 2 , 1 , "wall_top_dm"   , 1 ),
+	( 28 ,  3 , 2 , 1 , "wall_top_dr"   , 1 ),
+	( 38 ,  1 , 3 , 1 , "wall_l"        , 1 ),
+	( 39 ,  2 , 3 , 1 , "wall_m"        , 1 ),
+	( 40 ,  3 , 3 , 1 , "wall_r"        , 1 ),
+	( 50 ,  1 , 4 , 1 , "wall_dl"       , 1 ),
+	( 51 ,  2 , 4 , 1 , "wall_dm"       , 1 ),
+	( 52 ,  3 , 4 , 1 , "wall_dr"       , 1 ),
+	(  5 ,  4 , 0 , 1 , "leaves_top_ul" , 1 ),
+	(  6 ,  5 , 0 , 1 , "leaves_top_um" , 1 ),
+	(  7 ,  6 , 0 , 1 , "leaves_top_ur" , 1 ),
+	( 17 ,  4 , 1 , 1 , "leaves_top_l"  , 1 ),
+	( 18 ,  5 , 1 , 1 , "leaves_top_m"  , 1 ),
+	( 19 ,  6 , 1 , 1 , "leaves_top_r"  , 1 ),
+	( 29 ,  4 , 2 , 1 , "leaves_top_dl" , 1 ),
+	( 30 ,  5 , 2 , 1 , "leaves_top_dm" , 1 ),
+	( 31 ,  6 , 2 , 1 , "leaves_top_dr" , 1 ),
+	( 41 ,  4 , 3 , 1 , "leaves_l"      , 1 ),
+	( 42 ,  5 , 3 , 1 , "leaves_m"      , 1 ),
+	( 43 ,  6 , 3 , 1 , "leaves_r"      , 1 ),
+	( 53 ,  4 , 4 , 1 , "leaves_dl"     , 1 ),
+	( 54 ,  5 , 4 , 1 , "leaves_dm"     , 1 ),
+	( 55 ,  6 , 4 , 1 , "leaves_dr"     , 1 ),
+]

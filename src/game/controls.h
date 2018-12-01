@@ -5,11 +5,12 @@
 struct Controls
 {
     Input::Button
-        up      = Input::up,
-        down    = Input::down,
-        left    = Input::left,
-        right   = Input::right,
-        jump_ok = Input::f;
+        debug_reload = Input::f5,
+        up           = Input::up,
+        down         = Input::down,
+        left         = Input::left,
+        right        = Input::right,
+        jump_ok      = Input::f;
 
     Input::Mouse mouse;
 };

@@ -4,21 +4,24 @@
 #include <string>
 #include <utility>
 
+#include "interface/messagebox.h"
 #include "program/errors.h"
 #include "reflection/complete.h"
 #include "utils/memory_file.h"
 
 template <typename T> class Config
 {
-    T object;
+    T object = {};
+
+    std::string file_name;
 
   public:
-    Config(decltype(nullptr)) : object() {}
+    Config(decltype(nullptr)) {}
 
     explicit Config(const T &object) : object(object) {}
     explicit Config(T &&object) : object(std::move(object)) {}
 
-    Config(const std::string &file_name) : object()
+    Config(const std::string &file_name) : file_name(file_name)
     {
         MemoryFile file;
 
@@ -76,4 +79,16 @@ template <typename T> class Config
 
     const T &operator*() const {return object;}
     const T *operator->() const {return &object;}
+
+    void Reload()
+    {
+        try
+        {
+            *this = Config(file_name);
+        }
+        catch (std::exception &e)
+        {
+            Interface::MessageBox(Interface::MessageBoxType::warning, "Unable to load config", e.what());
+        }
+    }
 };

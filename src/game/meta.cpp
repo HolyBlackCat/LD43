@@ -4,6 +4,8 @@
 #include <iostream>
 #include <vector>
 
+#include "audio/context.h"
+#include "audio/errors.h"
 #include "graphics/complete.h"
 #include "input/mouse.h"
 #include "interface/window.h"
@@ -21,8 +23,6 @@
 #include "game/texture_atlas.h"
 #include "game/states/world.h"
 
-#define main SDL_main
-
 extern const ivec2 screen_size = ivec2(480,270);
 static const Graphics::ShaderConfig shader_config;
 
@@ -39,52 +39,74 @@ Random<> random;
 Render render(1000, shader_config);
 
 //{ Fonts
-Graphics::Font font_main;
-static Graphics::FontFile fontfile_main("assets/Monokat_6x12.ttf", 12);
+extern FontList &Fonts()
+{
+    static FontList ret;
+    return ret;
+}
 //}
 
-const TextureAtlas &Atlas()
+TextureAtlas &Atlas()
 {
-    static const TextureAtlas &atlas = []() -> TextureAtlas &
-    {
-        static TextureAtlas atlas(ivec2(2048), "assets/images", "assets/atlas.png", "assets/atlas.refl");
-
-        namespace Ranges = Unicode::Ranges;
-        Unicode::CharSet symbols =
-        {
-            Unicode::Ranges::Basic_Latin,
-            Unicode::Ranges::Latin_1_Supplement,
-            Unicode::Ranges::Latin_Extended_A,
-            Unicode::Ranges::Latin_Extended_B,
-            Unicode::Ranges::Latin_Extended_C,
-            Unicode::Ranges::IPA_Extensions,
-            Unicode::Ranges::Spacing_Modifier_Letters,
-            Unicode::Ranges::Combining_Diacritical_Marks,
-            Unicode::Ranges::Greek_and_Coptic,
-            Unicode::Ranges::Currency_Symbols,
-            Unicode::Ranges::Cyrillic,
-            Unicode::Ranges::Cyrillic_Supplement,
-        };
-
-        auto storage = atlas.Get("font_storage.png");
-
-        Graphics::MakeFontAtlas(const_cast<Graphics::Image &>(atlas.GetImage()), storage.pos, storage.size,
-        {
-            {font_main, fontfile_main, symbols},
-        });
-
-        return atlas;
-    }();
+    static TextureAtlas atlas;
     return atlas;
 }
 
-static Graphics::Texture tex = Graphics::Texture().SetData(Atlas().GetImage()).Interpolation(Graphics::nearest).Wrap(Graphics::clamp);
+static Graphics::Texture tex = Graphics::Texture().Interpolation(Graphics::nearest).Wrap(Graphics::clamp);
+
+static Graphics::FontFile fontfile_main = nullptr;
+
+void UpdateTextureAtlas()
+{
+    static uint64_t update_time = -1;
+    if (update_time != uint64_t(-1) && update_time == metronome().ticks)
+        return;
+    update_time = metronome().ticks;
+
+    TextureAtlas &atlas = Atlas();
+
+    atlas = TextureAtlas(ivec2(2048), "assets/images", "assets/atlas.png", "assets/atlas.refl");
+
+    namespace Ranges = Unicode::Ranges;
+    Unicode::CharSet symbols =
+    {
+        Unicode::Ranges::Basic_Latin,
+        Unicode::Ranges::Latin_1_Supplement,
+        Unicode::Ranges::Latin_Extended_A,
+        Unicode::Ranges::Latin_Extended_B,
+        Unicode::Ranges::Latin_Extended_C,
+        Unicode::Ranges::IPA_Extensions,
+        Unicode::Ranges::Spacing_Modifier_Letters,
+        Unicode::Ranges::Combining_Diacritical_Marks,
+        Unicode::Ranges::Greek_and_Coptic,
+        Unicode::Ranges::Currency_Symbols,
+        Unicode::Ranges::Cyrillic,
+        Unicode::Ranges::Cyrillic_Supplement,
+    };
+
+    auto storage = atlas.Get("font_storage.png");
+
+    fontfile_main = Graphics::FontFile("assets/Monokat_6x12.ttf", 12);
+
+    Graphics::MakeFontAtlas(const_cast<Graphics::Image &>(atlas.GetImage()), storage.pos, storage.size,
+    {
+        {Fonts().main, fontfile_main, symbols},
+    });
+
+    tex.SetData(atlas.GetImage());
+}
 
 AdaptiveViewport viewport(shader_config, screen_size);
 
-Metronome metronome;
+extern Metronome &metronome()
+{
+    static Metronome ret;
+    return ret;
+}
 
 DynStorage<States::State> game_state = nullptr;
+
+#define main SDL_main
 
 int main(int, char**)
 {
@@ -95,6 +117,7 @@ int main(int, char**)
     Graphics::Blending::Enable();
     Graphics::Blending::FuncNormalPre();
 
+    UpdateTextureAtlas();
     render.SetTexture(tex);
     viewport.Update();
 
@@ -103,12 +126,12 @@ int main(int, char**)
 
     Clock::DeltaTimer delta_timer;
 
-    game_state = game_state.make<States::World>();
+    game_state = game_state.make<States::WorldState>();
 
     while (1)
     {
         uint64_t delta = delta_timer();
-        while (metronome.Tick(delta))
+        while (metronome().Tick(delta))
         {
             win.ProcessEvents();
 

@@ -23,12 +23,18 @@ extern Audio::Context audio_context;
 extern Random<> random; // <> can't be omitted, see `meta.cpp` for details.
 
 extern Render render;
-extern Graphics::Font font_main;
 
-const TextureAtlas &Atlas();
+struct FontList
+{
+    Graphics::Font main;
+};
+extern FontList &Fonts();
+
+TextureAtlas &Atlas();
+void UpdateTextureAtlas();
 
 extern AdaptiveViewport viewport;
 
-extern Metronome metronome;
+extern Metronome &metronome();
 
 extern DynStorage<States::State> game_state;

@@ -307,6 +307,9 @@ namespace Graphics
 
         for (const FontAtlasEntry &entry : entries)
         {
+            // Clear target font.
+            *entry.target = {};
+
             // Save font metrics.
             entry.target->SetAscent(entry.source->Ascent());
             entry.target->SetDescent(entry.source->Descent());
