@@ -28,7 +28,11 @@ static const Graphics::ShaderConfig shader_config;
 
 Interface::Window win("Gamma", screen_size*2, Interface::windowed, ADJUST(Interface::WindowSettings{}, min_size = screen_size));
 
-Audio::Context audio_context;
+Audio::Context &audio_context()
+{
+    static Audio::Context ret;
+    return ret;
+}
 
 static Graphics::DummyVertexArray dummy_vao;
 
@@ -52,7 +56,7 @@ TextureAtlas &Atlas()
     return atlas;
 }
 
-static Graphics::Texture tex = Graphics::Texture().Interpolation(Graphics::nearest).Wrap(Graphics::clamp);
+Graphics::Texture main_texture = Graphics::Texture().Interpolation(Graphics::nearest).Wrap(Graphics::clamp);
 
 static Graphics::FontFile fontfile_main = nullptr;
 
@@ -93,7 +97,7 @@ void UpdateTextureAtlas()
         {Fonts().main, fontfile_main, symbols},
     });
 
-    tex.SetData(atlas.GetImage());
+    main_texture.SetData(atlas.GetImage());
 }
 
 AdaptiveViewport viewport(shader_config, screen_size);
@@ -111,6 +115,7 @@ DynStorage<States::State> game_state = nullptr;
 int main(int, char**)
 {
     Atlas(); // Make sure the atlas is generated.
+    audio_context(); // Make sure the context is created.
 
     Graphics::SetClearColor(fvec3(0));
 
@@ -118,7 +123,7 @@ int main(int, char**)
     Graphics::Blending::FuncNormalPre();
 
     UpdateTextureAtlas();
-    render.SetTexture(tex);
+    render.SetTexture(main_texture);
     viewport.Update();
 
     render.SetMatrix(viewport.GetDetails().MatrixCentered());
@@ -145,7 +150,7 @@ int main(int, char**)
 
             game_state->Tick();
 
-            audio_context.Tick();
+            audio_context().Tick();
             Audio::CheckErrors();
         }
 

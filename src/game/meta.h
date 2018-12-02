@@ -6,6 +6,7 @@
 #include "game/state.h"
 #include "game/texture_atlas.h"
 #include "graphics/font.h"
+#include "graphics/texture.h"
 #include "input/mouse.h"
 #include "interface/window.h"
 #include "utils/config.h"
@@ -18,7 +19,7 @@ extern const ivec2 screen_size;
 
 extern Interface::Window win;
 
-extern Audio::Context audio_context;
+extern Audio::Context &audio_context();
 
 extern Random<> random; // <> can't be omitted, see `meta.cpp` for details.
 
@@ -32,6 +33,8 @@ extern FontList &Fonts();
 
 TextureAtlas &Atlas();
 void UpdateTextureAtlas();
+
+extern Graphics::Texture main_texture;
 
 extern AdaptiveViewport viewport;
 
