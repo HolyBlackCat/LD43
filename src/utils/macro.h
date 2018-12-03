@@ -30,8 +30,8 @@
 
 #define MA_SEQ_NO_FIRST(seq) MA_NULL seq
 
-#define MA_VA_SIZE(...) MA_VA_SIZE_impl(__VA_ARGS__,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0)
-#define MA_VA_SIZE_impl(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,size,...) size
+#define MA_VA_SIZE(...) MA_VA_SIZE_impl(__VA_ARGS__,93,92,91,90,89,88,87,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0)
+#define MA_VA_SIZE_impl(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,p93,size,...) size
 
 #define MA_SEQ_SIZE(seq) MA_CAT(MA_SEQ_SIZE_impl_0 seq, _val)
 #define MA_SEQ_SIZE_impl_0(...) MA_SEQ_SIZE_impl_1
@@ -99,6 +99,34 @@
 #define MA_SEQ_SIZE_impl_62(...) MA_SEQ_SIZE_impl_63
 #define MA_SEQ_SIZE_impl_63(...) MA_SEQ_SIZE_impl_64
 #define MA_SEQ_SIZE_impl_64(...) MA_SEQ_SIZE_impl_65
+#define MA_SEQ_SIZE_impl_65(...) MA_SEQ_SIZE_impl_66
+#define MA_SEQ_SIZE_impl_66(...) MA_SEQ_SIZE_impl_67
+#define MA_SEQ_SIZE_impl_67(...) MA_SEQ_SIZE_impl_68
+#define MA_SEQ_SIZE_impl_68(...) MA_SEQ_SIZE_impl_69
+#define MA_SEQ_SIZE_impl_69(...) MA_SEQ_SIZE_impl_70
+#define MA_SEQ_SIZE_impl_70(...) MA_SEQ_SIZE_impl_71
+#define MA_SEQ_SIZE_impl_71(...) MA_SEQ_SIZE_impl_72
+#define MA_SEQ_SIZE_impl_72(...) MA_SEQ_SIZE_impl_73
+#define MA_SEQ_SIZE_impl_73(...) MA_SEQ_SIZE_impl_74
+#define MA_SEQ_SIZE_impl_74(...) MA_SEQ_SIZE_impl_75
+#define MA_SEQ_SIZE_impl_75(...) MA_SEQ_SIZE_impl_76
+#define MA_SEQ_SIZE_impl_76(...) MA_SEQ_SIZE_impl_77
+#define MA_SEQ_SIZE_impl_77(...) MA_SEQ_SIZE_impl_78
+#define MA_SEQ_SIZE_impl_78(...) MA_SEQ_SIZE_impl_79
+#define MA_SEQ_SIZE_impl_79(...) MA_SEQ_SIZE_impl_80
+#define MA_SEQ_SIZE_impl_80(...) MA_SEQ_SIZE_impl_81
+#define MA_SEQ_SIZE_impl_81(...) MA_SEQ_SIZE_impl_82
+#define MA_SEQ_SIZE_impl_82(...) MA_SEQ_SIZE_impl_83
+#define MA_SEQ_SIZE_impl_83(...) MA_SEQ_SIZE_impl_84
+#define MA_SEQ_SIZE_impl_84(...) MA_SEQ_SIZE_impl_85
+#define MA_SEQ_SIZE_impl_85(...) MA_SEQ_SIZE_impl_86
+#define MA_SEQ_SIZE_impl_86(...) MA_SEQ_SIZE_impl_87
+#define MA_SEQ_SIZE_impl_87(...) MA_SEQ_SIZE_impl_88
+#define MA_SEQ_SIZE_impl_88(...) MA_SEQ_SIZE_impl_89
+#define MA_SEQ_SIZE_impl_89(...) MA_SEQ_SIZE_impl_90
+#define MA_SEQ_SIZE_impl_90(...) MA_SEQ_SIZE_impl_91
+#define MA_SEQ_SIZE_impl_91(...) MA_SEQ_SIZE_impl_92
+#define MA_SEQ_SIZE_impl_92(...) MA_SEQ_SIZE_impl_93
 #define MA_SEQ_SIZE_impl_0_val 0
 #define MA_SEQ_SIZE_impl_1_val 1
 #define MA_SEQ_SIZE_impl_2_val 2
@@ -164,6 +192,34 @@
 #define MA_SEQ_SIZE_impl_62_val 62
 #define MA_SEQ_SIZE_impl_63_val 63
 #define MA_SEQ_SIZE_impl_64_val 64
+#define MA_SEQ_SIZE_impl_65_val 65
+#define MA_SEQ_SIZE_impl_66_val 66
+#define MA_SEQ_SIZE_impl_67_val 67
+#define MA_SEQ_SIZE_impl_68_val 68
+#define MA_SEQ_SIZE_impl_69_val 69
+#define MA_SEQ_SIZE_impl_70_val 70
+#define MA_SEQ_SIZE_impl_71_val 71
+#define MA_SEQ_SIZE_impl_72_val 72
+#define MA_SEQ_SIZE_impl_73_val 73
+#define MA_SEQ_SIZE_impl_74_val 74
+#define MA_SEQ_SIZE_impl_75_val 75
+#define MA_SEQ_SIZE_impl_76_val 76
+#define MA_SEQ_SIZE_impl_77_val 77
+#define MA_SEQ_SIZE_impl_78_val 78
+#define MA_SEQ_SIZE_impl_79_val 79
+#define MA_SEQ_SIZE_impl_80_val 80
+#define MA_SEQ_SIZE_impl_81_val 81
+#define MA_SEQ_SIZE_impl_82_val 82
+#define MA_SEQ_SIZE_impl_83_val 83
+#define MA_SEQ_SIZE_impl_84_val 84
+#define MA_SEQ_SIZE_impl_85_val 85
+#define MA_SEQ_SIZE_impl_86_val 86
+#define MA_SEQ_SIZE_impl_87_val 87
+#define MA_SEQ_SIZE_impl_88_val 88
+#define MA_SEQ_SIZE_impl_89_val 89
+#define MA_SEQ_SIZE_impl_90_val 90
+#define MA_SEQ_SIZE_impl_91_val 91
+#define MA_SEQ_SIZE_impl_92_val 92
 
 #define MA_VA_TO_SEQ(...) MA_CAT(MA_VA_TO_SEQ_impl_, MA_VA_SIZE(__VA_ARGS__,))(__VA_ARGS__,)
 #define MA_VA_TO_SEQ_TRAILING_COMMA(...) MA_CAT(MA_VA_TO_SEQ_impl_, MA_VA_SIZE(__VA_ARGS__))(__VA_ARGS__)
@@ -233,6 +289,34 @@
 #define MA_VA_TO_SEQ_impl_63(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62) MA_VA_TO_SEQ_impl_1(empty)
 #define MA_VA_TO_SEQ_impl_64(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63) MA_VA_TO_SEQ_impl_1(empty)
 #define MA_VA_TO_SEQ_impl_65(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_66(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_67(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_68(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_69(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_70(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_71(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_72(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_73(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_74(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_75(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_76(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_77(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_78(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_79(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_80(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_81(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_82(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_83(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81)(p82) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_84(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81)(p82)(p83) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_85(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81)(p82)(p83)(p84) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_86(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81)(p82)(p83)(p84)(p85) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_87(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81)(p82)(p83)(p84)(p85)(p86) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_88(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81)(p82)(p83)(p84)(p85)(p86)(p87) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_89(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81)(p82)(p83)(p84)(p85)(p86)(p87)(p88) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_90(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81)(p82)(p83)(p84)(p85)(p86)(p87)(p88)(p89) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_91(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81)(p82)(p83)(p84)(p85)(p86)(p87)(p88)(p89)(p90) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_92(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81)(p82)(p83)(p84)(p85)(p86)(p87)(p88)(p89)(p90)(p91) MA_VA_TO_SEQ_impl_1(empty)
+#define MA_VA_TO_SEQ_impl_93(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35,p36,p37,p38,p39,p40,p41,p42,p43,p44,p45,p46,p47,p48,p49,p50,p51,p52,p53,p54,p55,p56,p57,p58,p59,p60,p61,p62,p63,p64,p65,p66,p67,p68,p69,p70,p71,p72,p73,p74,p75,p76,p77,p78,p79,p80,p81,p82,p83,p84,p85,p86,p87,p88,p89,p90,p91,p92,empty) (p1)(p2)(p3)(p4)(p5)(p6)(p7)(p8)(p9)(p10)(p11)(p12)(p13)(p14)(p15)(p16)(p17)(p18)(p19)(p20)(p21)(p22)(p23)(p24)(p25)(p26)(p27)(p28)(p29)(p30)(p31)(p32)(p33)(p34)(p35)(p36)(p37)(p38)(p39)(p40)(p41)(p42)(p43)(p44)(p45)(p46)(p47)(p48)(p49)(p50)(p51)(p52)(p53)(p54)(p55)(p56)(p57)(p58)(p59)(p60)(p61)(p62)(p63)(p64)(p65)(p66)(p67)(p68)(p69)(p70)(p71)(p72)(p73)(p74)(p75)(p76)(p77)(p78)(p79)(p80)(p81)(p82)(p83)(p84)(p85)(p86)(p87)(p88)(p89)(p90)(p91)(p92) MA_VA_TO_SEQ_impl_1(empty)
 
 #define MA_SEQ_TO_VA(seq) MA_CAT(MA_SEQ_TO_VA_impl_, MA_SEQ_SIZE(seq)) seq
 #define MA_SEQ_TO_VA_impl_0
@@ -300,6 +384,34 @@
 #define MA_SEQ_TO_VA_impl_62(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_61
 #define MA_SEQ_TO_VA_impl_63(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_62
 #define MA_SEQ_TO_VA_impl_64(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_63
+#define MA_SEQ_TO_VA_impl_65(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_64
+#define MA_SEQ_TO_VA_impl_66(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_65
+#define MA_SEQ_TO_VA_impl_67(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_66
+#define MA_SEQ_TO_VA_impl_68(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_67
+#define MA_SEQ_TO_VA_impl_69(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_68
+#define MA_SEQ_TO_VA_impl_70(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_69
+#define MA_SEQ_TO_VA_impl_71(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_70
+#define MA_SEQ_TO_VA_impl_72(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_71
+#define MA_SEQ_TO_VA_impl_73(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_72
+#define MA_SEQ_TO_VA_impl_74(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_73
+#define MA_SEQ_TO_VA_impl_75(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_74
+#define MA_SEQ_TO_VA_impl_76(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_75
+#define MA_SEQ_TO_VA_impl_77(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_76
+#define MA_SEQ_TO_VA_impl_78(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_77
+#define MA_SEQ_TO_VA_impl_79(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_78
+#define MA_SEQ_TO_VA_impl_80(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_79
+#define MA_SEQ_TO_VA_impl_81(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_80
+#define MA_SEQ_TO_VA_impl_82(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_81
+#define MA_SEQ_TO_VA_impl_83(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_82
+#define MA_SEQ_TO_VA_impl_84(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_83
+#define MA_SEQ_TO_VA_impl_85(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_84
+#define MA_SEQ_TO_VA_impl_86(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_85
+#define MA_SEQ_TO_VA_impl_87(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_86
+#define MA_SEQ_TO_VA_impl_88(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_87
+#define MA_SEQ_TO_VA_impl_89(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_88
+#define MA_SEQ_TO_VA_impl_90(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_89
+#define MA_SEQ_TO_VA_impl_91(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_90
+#define MA_SEQ_TO_VA_impl_92(...) __VA_ARGS__,MA_SEQ_TO_VA_impl_91
 
 #define MA_SEQ_TO_VA_PARENS(seq) MA_CAT(MA_SEQ_TO_VA_PARENS_impl_, MA_SEQ_SIZE(seq)) seq
 #define MA_SEQ_TO_VA_PARENS_impl_0
@@ -367,6 +479,34 @@
 #define MA_SEQ_TO_VA_PARENS_impl_62(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_61
 #define MA_SEQ_TO_VA_PARENS_impl_63(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_62
 #define MA_SEQ_TO_VA_PARENS_impl_64(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_63
+#define MA_SEQ_TO_VA_PARENS_impl_65(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_64
+#define MA_SEQ_TO_VA_PARENS_impl_66(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_65
+#define MA_SEQ_TO_VA_PARENS_impl_67(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_66
+#define MA_SEQ_TO_VA_PARENS_impl_68(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_67
+#define MA_SEQ_TO_VA_PARENS_impl_69(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_68
+#define MA_SEQ_TO_VA_PARENS_impl_70(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_69
+#define MA_SEQ_TO_VA_PARENS_impl_71(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_70
+#define MA_SEQ_TO_VA_PARENS_impl_72(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_71
+#define MA_SEQ_TO_VA_PARENS_impl_73(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_72
+#define MA_SEQ_TO_VA_PARENS_impl_74(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_73
+#define MA_SEQ_TO_VA_PARENS_impl_75(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_74
+#define MA_SEQ_TO_VA_PARENS_impl_76(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_75
+#define MA_SEQ_TO_VA_PARENS_impl_77(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_76
+#define MA_SEQ_TO_VA_PARENS_impl_78(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_77
+#define MA_SEQ_TO_VA_PARENS_impl_79(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_78
+#define MA_SEQ_TO_VA_PARENS_impl_80(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_79
+#define MA_SEQ_TO_VA_PARENS_impl_81(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_80
+#define MA_SEQ_TO_VA_PARENS_impl_82(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_81
+#define MA_SEQ_TO_VA_PARENS_impl_83(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_82
+#define MA_SEQ_TO_VA_PARENS_impl_84(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_83
+#define MA_SEQ_TO_VA_PARENS_impl_85(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_84
+#define MA_SEQ_TO_VA_PARENS_impl_86(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_85
+#define MA_SEQ_TO_VA_PARENS_impl_87(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_86
+#define MA_SEQ_TO_VA_PARENS_impl_88(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_87
+#define MA_SEQ_TO_VA_PARENS_impl_89(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_88
+#define MA_SEQ_TO_VA_PARENS_impl_90(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_89
+#define MA_SEQ_TO_VA_PARENS_impl_91(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_90
+#define MA_SEQ_TO_VA_PARENS_impl_92(...) (__VA_ARGS__),MA_SEQ_TO_VA_PARENS_impl_91
 
 // In MA_*_FOR_EACH below, `macro` argument is called as `macro(i, data, element)`. Note that to simplify implementation, `i` counts backwards from N-1 to 0.
 
@@ -441,6 +581,34 @@
 #define MA_SEQ_FOR_EACH_impl_62(macro, sep, data, seq) MA_IMPL_CALL(macro, 61, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_61(macro, sep, data, MA_SEQ_NO_FIRST(seq))
 #define MA_SEQ_FOR_EACH_impl_63(macro, sep, data, seq) MA_IMPL_CALL(macro, 62, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_62(macro, sep, data, MA_SEQ_NO_FIRST(seq))
 #define MA_SEQ_FOR_EACH_impl_64(macro, sep, data, seq) MA_IMPL_CALL(macro, 63, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_63(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_65(macro, sep, data, seq) MA_IMPL_CALL(macro, 64, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_64(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_66(macro, sep, data, seq) MA_IMPL_CALL(macro, 65, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_65(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_67(macro, sep, data, seq) MA_IMPL_CALL(macro, 66, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_66(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_68(macro, sep, data, seq) MA_IMPL_CALL(macro, 67, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_67(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_69(macro, sep, data, seq) MA_IMPL_CALL(macro, 68, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_68(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_70(macro, sep, data, seq) MA_IMPL_CALL(macro, 69, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_69(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_71(macro, sep, data, seq) MA_IMPL_CALL(macro, 70, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_70(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_72(macro, sep, data, seq) MA_IMPL_CALL(macro, 71, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_71(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_73(macro, sep, data, seq) MA_IMPL_CALL(macro, 72, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_72(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_74(macro, sep, data, seq) MA_IMPL_CALL(macro, 73, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_73(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_75(macro, sep, data, seq) MA_IMPL_CALL(macro, 74, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_74(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_76(macro, sep, data, seq) MA_IMPL_CALL(macro, 75, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_75(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_77(macro, sep, data, seq) MA_IMPL_CALL(macro, 76, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_76(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_78(macro, sep, data, seq) MA_IMPL_CALL(macro, 77, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_77(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_79(macro, sep, data, seq) MA_IMPL_CALL(macro, 78, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_78(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_80(macro, sep, data, seq) MA_IMPL_CALL(macro, 79, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_79(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_81(macro, sep, data, seq) MA_IMPL_CALL(macro, 80, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_80(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_82(macro, sep, data, seq) MA_IMPL_CALL(macro, 81, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_81(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_83(macro, sep, data, seq) MA_IMPL_CALL(macro, 82, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_82(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_84(macro, sep, data, seq) MA_IMPL_CALL(macro, 83, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_83(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_85(macro, sep, data, seq) MA_IMPL_CALL(macro, 84, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_84(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_86(macro, sep, data, seq) MA_IMPL_CALL(macro, 85, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_85(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_87(macro, sep, data, seq) MA_IMPL_CALL(macro, 86, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_86(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_88(macro, sep, data, seq) MA_IMPL_CALL(macro, 87, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_87(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_89(macro, sep, data, seq) MA_IMPL_CALL(macro, 88, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_88(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_90(macro, sep, data, seq) MA_IMPL_CALL(macro, 89, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_89(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_91(macro, sep, data, seq) MA_IMPL_CALL(macro, 90, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_90(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_impl_92(macro, sep, data, seq) MA_IMPL_CALL(macro, 91, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_impl_91(macro, sep, data, MA_SEQ_NO_FIRST(seq))
 
 #define MA_SEQ_FOR_EACH_A(macro, sep, data, seq) MA_CAT(MA_SEQ_FOR_EACH_A_impl_, MA_SEQ_SIZE(seq))(macro, sep, data, seq)
 #define MA_SEQ_FOR_EACH_A_impl_0(macro, sep, data, seq)
@@ -508,4 +676,32 @@
 #define MA_SEQ_FOR_EACH_A_impl_62(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 61, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_61(macro, sep, data, MA_SEQ_NO_FIRST(seq))
 #define MA_SEQ_FOR_EACH_A_impl_63(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 62, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_62(macro, sep, data, MA_SEQ_NO_FIRST(seq))
 #define MA_SEQ_FOR_EACH_A_impl_64(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 63, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_63(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_65(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 64, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_64(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_66(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 65, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_65(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_67(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 66, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_66(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_68(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 67, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_67(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_69(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 68, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_68(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_70(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 69, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_69(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_71(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 70, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_70(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_72(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 71, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_71(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_73(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 72, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_72(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_74(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 73, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_73(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_75(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 74, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_74(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_76(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 75, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_75(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_77(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 76, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_76(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_78(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 77, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_77(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_79(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 78, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_78(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_80(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 79, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_79(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_81(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 80, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_80(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_82(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 81, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_81(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_83(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 82, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_82(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_84(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 83, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_83(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_85(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 84, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_84(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_86(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 85, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_85(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_87(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 86, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_86(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_88(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 87, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_87(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_89(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 88, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_88(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_90(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 89, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_89(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_91(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 90, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_90(macro, sep, data, MA_SEQ_NO_FIRST(seq))
+#define MA_SEQ_FOR_EACH_A_impl_92(macro, sep, data, seq) MA_IMPL_CALL_A(macro, 91, data, MA_SEQ_FIRST(seq)) sep() MA_SEQ_FOR_EACH_A_impl_91(macro, sep, data, MA_SEQ_NO_FIRST(seq))
 

@@ -126,7 +126,7 @@ namespace Dynamic
         typename T,
         template <typename,typename> typename Funcs = DefaultFuncs
     >
-    class Storage : impl::maybe_copyable<std::is_copy_constructible_v<T>>
+    class Storage
     {
         static_assert(!std::is_const_v<T>, "Template parameter can't be const.");
         static_assert(!std::is_array_v<T>, "Template parameter can't be an array.");
@@ -175,7 +175,10 @@ namespace Dynamic
         template <typename ...P, typename = std::void_t<decltype(T(std::declval<P>()...))>> // Disable if T is not constructible from these parameters.
         Storage(P &&... p) : data(std::make_unique<T>(std::forward<P>(p)...)) {}
 
-        Storage(const Storage &other) : data(other ? Data(other.funcs()._copy(other), other.data.funcs) : Data()) {}
+        Storage(const Storage &other) : data(other ? Data(other.funcs()._copy(other), other.data.funcs) : Data())
+        {
+            static_assert(std::is_copy_constructible_v<T>);
+        }
 
         Storage(Storage &&other) noexcept : data(std::exchange(other.data, {})) {}
 

@@ -11,7 +11,7 @@
 
 namespace data
 {
-    constexpr int n = 64;
+    constexpr int n = 92;
     const std::vector<std::string> suffixes = {"", "_A"};
 }
 

@@ -6,7 +6,7 @@
 #include <sstream>
 #include <type_traits>
 
-#define VERSION "3.1.2"
+#define VERSION "3.1.3"
 
 namespace data
 {
@@ -512,7 +512,7 @@ int main()
                             if (w == 2)
                             {
                                 // Construct from angle
-                                output("template <typename TT> [[nodiscard]] static constexpr vec dir(TT angle, type len = 1) {return vec(std::cos(angle) * len, std::sin(angle) * len); static_assert(is_floating_point, \"The vector must be floating-point.\");}\n");
+                                output("[[nodiscard]] static constexpr vec dir(type angle, type len = 1) {return vec(std::cos(angle) * len, std::sin(angle) * len); static_assert(is_floating_point, \"The vector must be floating-point.\");}\n");
 
                                 // Get angle
                                 output("template <typename TT = double> [[nodiscard]] constexpr floating_point_t<T> angle() const {return std::atan2(TT(y), TT(x));}\n"); // Note that atan2 is well-defined even when applied to (0,0).

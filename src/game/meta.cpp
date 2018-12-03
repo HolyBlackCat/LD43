@@ -26,7 +26,7 @@
 extern const ivec2 screen_size = ivec2(480,270);
 static const Graphics::ShaderConfig shader_config;
 
-Interface::Window win("Gamma", screen_size*2, Interface::windowed, ADJUST(Interface::WindowSettings{}, min_size = screen_size));
+Interface::Window win("LD43 - Blood magic for dummies", screen_size*2, Interface::windowed, ADJUST(Interface::WindowSettings{}, min_size = screen_size));
 
 Audio::Context &audio_context()
 {
@@ -94,7 +94,7 @@ void UpdateTextureAtlas()
 
     Graphics::MakeFontAtlas(const_cast<Graphics::Image &>(atlas.GetImage()), storage.pos, storage.size,
     {
-        {Fonts().main, fontfile_main, symbols},
+        {Fonts().main, fontfile_main, symbols, Graphics::FontFile::mono},
     });
 
     main_texture.SetData(atlas.GetImage());
