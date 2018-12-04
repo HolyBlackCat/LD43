@@ -172,7 +172,7 @@ namespace Dynamic
       public:
         Storage(decltype(nullptr)) noexcept {}
 
-        template <typename ...P, typename = std::void_t<decltype(T(std::declval<P>()...))>> // Disable if T is not constructible from these parameters.
+        template <typename ...P, typename = decltype(T(std::declval<P>()...), void())> // Disable if T is not constructible from these parameters.
         Storage(P &&... p) : data(std::make_unique<T>(std::forward<P>(p)...)) {}
 
         Storage(const Storage &other) : data(other ? Data(other.funcs()._copy(other), other.data.funcs) : Data())
@@ -189,7 +189,7 @@ namespace Dynamic
         }
 
         template <typename D = T, typename ...P,
-                  typename = std::void_t<decltype(D(std::declval<P>()...))>> // Disable if T is not constructible from these parameters.
+                  typename = decltype(D(std::declval<P>()...), void())> // Disable if T is not constructible from these parameters.
         [[nodiscard]] static Storage make(P &&... p)
         {
             static_assert(!std::is_const_v<D>, "Template parameter can't be const.");

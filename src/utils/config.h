@@ -38,7 +38,8 @@ template <typename T> class Config
             try
             {
                 // Try parsing normally.
-                Refl::Interface(object).from_string(file.construct_string().c_str());
+                auto refl = Refl::Interface(object);
+                refl.from_string(file.construct_string().c_str());
 
                 // Success, we're done.
                 return;
@@ -51,7 +52,8 @@ template <typename T> class Config
                 bool partial_parsing_ok = 0;
                 try
                 {
-                    Refl::Interface(object).from_string(file.construct_string().c_str(), Refl::partial);
+                    auto refl = Refl::Interface(object);
+                    refl.from_string(file.construct_string().c_str(), Refl::partial);
                     partial_parsing_ok = 1;
                 }
                 catch (...) {}
@@ -69,7 +71,8 @@ template <typename T> class Config
         // We can't open the file, unable to parse the file, or file is incomplete.
         // Creating a new file.
 
-        std::string obj_string = Refl::Interface(object).to_string(4);
+        auto refl = Refl::Interface(object);
+        std::string obj_string = refl.to_string(4);
         try
         {
             MemoryFile::Save(file_name, (uint8_t *)obj_string.data(), (uint8_t *)obj_string.data() + obj_string.size());

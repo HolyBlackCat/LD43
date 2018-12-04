@@ -727,6 +727,8 @@ extern const std::deque<DynStorage<Demon>> demon_queue_orignial;
 
 extern DynStorage<World> world_copy;
 
+template <typename T> using mem_x = typename T::x;
+
 struct States::World
 {
     Map map;
@@ -749,6 +751,10 @@ struct States::World
 
     World()
     {
+        struct A {int y;};
+
+        std::cout << Meta::is_detected<mem_x, A> << '\n';
+
         // Initialize visual and audio stuff
         static bool first = 1;
         if (first)

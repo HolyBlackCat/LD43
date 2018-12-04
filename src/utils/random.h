@@ -172,6 +172,7 @@ class Random
             return func();
         }
     };
+    template <typename T> Function(T) -> Function<T>;
 
   public:
     using generator_t = std::mt19937;
